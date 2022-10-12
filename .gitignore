@@ -1,0 +1,6 @@
+ASU-PPC/client/node_modules/.cache
+ASU-PPC/client/node_modules/*
+ASU-PPC/server/node_modules/.cache
+ASU-PPC/server/node_modules/*
+ASU-PPC/server/secrets.js
+.vscode
