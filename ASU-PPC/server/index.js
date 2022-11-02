@@ -17,7 +17,9 @@ app.get("/api/get", (req, res) => {
         const datab = db.db("PPC");
 
         datab.collection("ProfessorInfo").findOne({FirstName: req.body.FirstName,
-                                                   LastName: req.body.LastName}, function(err, result) {
+                                                   LastName: req.body.LastName,
+                                                   },
+                                                   function(err, result) {
             if (err) throw err;
             res.json(result);
             db.close();
